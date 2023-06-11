@@ -2,7 +2,7 @@
 
 #### Önemli bir not: Anlatacağım Taş Kağıt Makas oyununa ait C# kodlarını daha etkin bir biçimde sunabilmek için bölüm bölüm alarak kodları sizlerle paylaştım ve ardından sırasıyla işlevleri hakkında bilgi vermek istedim. 
 
-## 1.Kod bloğumuz:
+## 1.Bölüm:
 
 using System;
  
@@ -37,7 +37,8 @@ InitializeComponent();
 }
 
 ---
-## 1.Kod bloğunun açıklanma alanı:
+## 1.Bölüm açıklanma alanı:
+
 **using System,**
 - System, genel .NET sınıflarını içeren bir isim alanıdır. 
 
@@ -77,7 +78,7 @@ InitializeComponent();
 
 ---
 
-## 2.Kod bloğumuz:
+## 2.Bölüm:
 
 Random r = new Random();
  
@@ -95,7 +96,7 @@ switch (rasgeleArac)
 
 ---
 
-## 2.Kod bloğunun açıklanma alanı:
+## 2.Bölüm açıklanma alanı:
 
 **Random r = new Random();** 
 
@@ -123,7 +124,7 @@ switch (rasgeleArac)
 
 ---
 
-## 3.Kod bloğu:
+## 3.Bölüm:
 
 case 0: aracAdi = "Taş"; break;
  
@@ -161,7 +162,7 @@ return aracAdi;
 
 ---
 
-## 3.Kod bloğu açıklanma alanı:
+## 3.Bölüm Açıklanma Alanı:
 
 - Bu kod satırında, aracAdi değişkenine atanmış olan taş, kağıt veya makas değerine göre bir görüntüyü pBox  PictureBox'a atamak için kullanılıyor. Ayrıca, aracAdi değerini geri döndürüyor.
 
@@ -199,7 +200,7 @@ pBox.Image özelliği Properties.Resources.makas kaynağına atanır. Bu, "makas
 
 ---
 
-## 4.Kod bloğumuz:
+## 4.Bölüm:
 
 private void KazanmaDurumu()
  
@@ -267,6 +268,10 @@ lblDurum.Text = Durum;
  
 }
 
+---
+
+## 4.Bölüm Açıklanma Alanı:
+
 - Bu kod satırında , Oyuncu1 ve Oyuncu2 değişkenlerindeki taş, kağıt veya makas seçimlerine göre kazananı belirlemek için kullanılır. Kazanan durumu Durum değişkenine atar ve lblDurum isimli bir etikete metin olarak görüntüler.
 
 **string Durum = "";**
@@ -313,6 +318,8 @@ Durum değişkenine "Berabere" metni atanır.
 -  Durum metni lblDurum etiketinin metin özelliğine atanır ve kullanıcıya gösterilir.
 
 ---
+
+## 5.Bölüm:
 
 private void btnOy1_Click(object sender, EventArgs e)
  
@@ -365,6 +372,8 @@ lblDurum.Text = "";
 pbOy1.Image = null; pbOy2.Image = null;
 
 ---
+
+## 5.Bölüm Açıklanma Alanı:
 
 - Burada bir oyuncu seçeneği seçtiğinde ve diğer oyuncu da seçeneğini seçtiğinde gerçekleşecek olayları belirtir. Ayrıca, yeni bir oyun başlatıldığında da yapılması gerekenleri tanımlar
 
