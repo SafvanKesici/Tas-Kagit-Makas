@@ -32,4 +32,24 @@ public Form1():
 Bu satır, Form1 sınıfının bir yapıcı (constructor) yöntemini tanımlar. Bu yöntem, Form1 sınıfından bir nesne oluşturulduğunda otomatik olarak çalıştırılır.
 
 InitializeComponent();:
-Bu satır, Windows Forms tasarımındaki bileşenlerin başlatılmasını sağlayan bir yöntemi çağırır. Bu yöntem, otomatik olarak Visual Studio tarafından oluşturulur
+Bu satır, Windows Forms tasarımındaki bileşenlerin başlatılmasını sağlayan bir yöntemi çağırır. Bu yöntem, otomatik olarak Visual Studio tarafından 
+Random r = new Random();: Bu satır, Random sınıfından bir r isimli yeni bir örnek oluşturur. Rastgele sayılar oluşturmak için kullanılır.
+
+string Oyuncu1 = "", Oyuncu2 = "";: İki adet boş dize değişkeni olan Oyuncu1 ve Oyuncu2 tanımlanır ve boş olarak başlatılır. Bu değişkenler, iki oyuncunun isimlerini temsil ediyor gibi görünmektedir.
+
+private string RasgeleArac(PictureBox pBox): Bu satır, PictureBox türünde pBox parametresi alan ve bir dize değeri döndüren RasgeleArac isimli özel bir metodu tanımlar. Bu metot, rastgele bir araç ismi oluşturmak için kullanılır.
+
+{: Açılış süslü parantez, metodun kod bloğunun başlangıcını belirtir.
+
+int rasgeleArac = r.Next(0, 3);: Bu satır, Random sınıfının Next metodunu kullanarak rastgele bir tamsayı oluşturur. 0 (dahil) ile 3 (hariç) arasında bir sayı üretir ve bu değeri rasgeleArac değişkenine atar.
+
+string aracAdi = "-";: Bu satır, aracAdi isimli bir dize değişkeni tanımlar ve onu bir tire ("-") ile başlatır.
+
+switch (rasgeleArac): switch ifadesi, rasgeleArac değerini değerlendirir ve değerine bağlı olarak hangi case'in çalıştırılacağını belirler.
+
+{: Açılış süslü parantez, switch ifadesinin kod bloğunun başlangıcını belirtir.
+
+Verdiğiniz kod parçası, switch ifadesindeki case'ler ve bunlara bağlı eylemler içermediği için her case'in özel işlevini veya amacını belirlemek mümkün değildir. Daha fazla bilgi olmadan her bir case'in işlevi hakkında daha ayrıntılı bir açıklama yapmak zordur.
+
+Gönderdiğiniz kod parçasının daha büyük bir programa ait olduğu ve oyuncular için rastgele araç isimleri oluşturma işlevini yerine getirdiği görülüyor, ancak eksik kod veya ek bilgi olmadan daha ayrıntılı bir açıklama yapmak zor.
+
