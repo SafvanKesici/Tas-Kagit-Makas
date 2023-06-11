@@ -59,4 +59,13 @@ Eğer durum değişkeni 1 ise, "aracAdi" değişkenine "Kağıt" değeri atanır
 Eğer durum değişkeni 2 ise, "aracAdi" değişkenine "Makas" değeri atanır.
 
 Bu kod parçası, bir "Taş, Kağıt, Makas" oyununda kullanılabilecek olan araç adlarını belirlemek için kullanılabilir.
+Bu kod parçası, bir oyundaki "Taş, Kağıt, Makas" araçlarının görüntülerini yüklemek için kullanılmaktadır.
+
+Kodun çalışma mantığı şu şekildedir:
+
+İlk olarak, "aracAdi" değişkeni "Taş" ile eşleşiyorsa, "pBox" adlı bir PictureBox nesnesinin Image özelliği "tas" adlı kaynak dosya ile değiştirilir.
+Eğer "aracAdi" değişkeni "Kağıt" ile eşleşiyorsa, "pBox" nesnesinin Image özelliği "kagit" adlı kaynak dosya ile değiştirilir.
+Eğer yukarıdaki iki durum sağlanmıyorsa, "pBox" nesnesinin Image özelliği "makas" adlı kaynak dosya ile değiştirilir.
+Son olarak, "aracAdi" değişkeni geri döndürülür.
+Bu kod parçası, "aracAdi" değişkeninin değerine göre ilgili aracın görüntüsünü yükler ve "aracAdi" değerini geri döndürür. Bu kod parçasının tam olarak nasıl çalıştığını görmek için, "tas", "kagit" ve "makas" adlı kaynak dosyaların mevcut olması gerektiğini unutmayın.
 
