@@ -1,5 +1,7 @@
 **Taş Kağıt Makas Oyunu**
+
 C# Örneği:
+
 using System;
  
 using System.Collections.Generic;
@@ -32,41 +34,63 @@ InitializeComponent();
  
 }
 ---
-using System;
-System, genel .NET sınıflarını içeren bir isim alanıdır.
+**_using System; _**
+- System, genel .NET sınıflarını içeren bir isim alanıdır. 
 
-using System.Collections.Generic;
-Bu isim alanı, .NET koleksiyon sınıflarını içerir.
+**_using System.Collections.Generic; _**
+- Bu isim alanı, .NET koleksiyon sınıflarını içerir. 
 
-using System.ComponentModel;
-NET bileşenleri ve olaylarını içerir.
+**_using System.ComponentModel; _**
+- NET bileşenleri ve olaylarını içerir.
 
-using System.Data;
-NET veri işleme işlevlerini içerir.
+**_using System.Data; _**
+- NET veri işleme işlevlerini içerir.
 
-using System.Drawing;
-Bu isim alanı, grafik çizme ve görüntü işleme işlevlerini içerir.
+**_using System.Drawing; _**
+- Bu isim alanı, grafik çizme ve görüntü işleme işlevlerini içerir.
 
-using System.Linq;
-LINQ (Language Integrated Query) sorguları ve işlevleri için destek sağlar.
+**_using System.Linq; _**
+-LINQ (Language Integrated Query) sorguları ve işlevleri için destek sağlar.
 
-using System.Text;
-Bu isim alanı, metin işleme ve karakter kodlamaları için .NET sınıflarını içerir.
+**_using System.Text; _**
+- Bu isim alanı, metin işleme ve karakter kodlamaları için .NET sınıflarını içerir.
 
-using System.Windows.Forms;
-Bu isim alanı, Windows Forms uygulama geliştirmek için .NET sınıflarını içerir.
+**_using System.Windows.Forms; _**
+- Bu isim alanı, Windows Forms uygulama geliştirmek için .NET sınıflarını içerir.
 
-namespace Tas_Kagit_Makas:
-Namespace'ler, kodun belirli bir bölümünü sınıflar ve diğer kod öğeleriyle gruplamak için kullanılır.
+**_namespace Tas_Kagit_Makas: _**
+- Namespace'ler, kodun belirli bir bölümünü sınıflar ve diğer kod öğeleriyle gruplamak için kullanılır.
 
-public partial class Form1 : Form:
-Bu sınıf, Windows Forms uygulamalarındaki bir formu temsil eder. "partial" anahtar kelimesi, sınıfın bir kısmının başka bir dosyada da tanımlanabileceğini gösterir.
+**_public partial class Form1 : Form: _**
+- Bu sınıf, Windows Forms uygulamalarındaki bir formu temsil eder. "partial" anahtar kelimesi, sınıfın bir kısmının başka bir dosyada da tanımlanabileceğini gösterir.
 
-public Form1():
-Form1 sınıfının bir yapıcı (constructor) yöntemini tanımlar. Bu yöntem, Form1 sınıfından bir nesne oluşturulduğunda otomatik olarak çalıştırılır.
+**_public Form1(): _**
+- Form1 sınıfının bir yapıcı (constructor) yöntemini tanımlar. Bu yöntem, Form1 sınıfından bir nesne oluşturulduğunda otomatik olarak çalıştırılır.
 
-InitializeComponent();:
-Bu satır, Windows Forms tasarımındaki bileşenlerin başlatılmasını sağlayan bir yöntemi çağırır.
+**_InitializeComponent(); _**
+
+- Bu satır, Windows Forms tasarımındaki bileşenlerin başlatılmasını sağlayan bir yöntemi çağırır.
+
+---
+
+C# Kod Örneği:
+
+Random r = new Random();
+ 
+string Oyuncu1 = "", Oyuncu2 = "";
+ 
+private string RasgeleArac(PictureBox pBox)
+ 
+{
+ 
+int rasgeleArac = r.Next(0, 3);
+ 
+string aracAdi = "-";
+ 
+switch (rasgeleArac)//www.gorselprogramlm.com
+
+
+
 
 
 
