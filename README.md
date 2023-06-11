@@ -1,2 +1,1 @@
-# Tas Kagit Makas
- MERHABALAR 
+# Tas Kagit MakAS
