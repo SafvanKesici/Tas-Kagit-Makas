@@ -1,4 +1,6 @@
-**Taş Kağıt Makas Oyunu**
+# Taş Kağıt Makas Oyunu
+
+#### Önemli bir not: Anlatacağım Taş Kağıt Makas oyununa ait C# kodlarını daha etkin bir biçimde sunabilmek için bölüm bölüm alarak kodları sizlerle paylaştım ve ardından sırasıyla işlevleri hakkında bilgi vermek istedim. 
 
 using System;
  
