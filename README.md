@@ -1,6 +1,6 @@
 #using System;:
 
-Bu satır, System.Collections.Generic adlı bir namespace'i kullanacağımızı belirtir. Bu isim alanı, .NET koleksiyon sınıflarını içerir.
+Bu satır, System.Collections.Generic adlı bir namespace'i kullanacağımızı belirtir. Bu isim alanı, .NET koleksiyon sınıflarını içerr
 
 using System.ComponentModel;:
 Bu satır, System.ComponentModel adlı bir namespace'i kullanacağımızı belirtir. Bu isim alanı, bileşen tabanlı programlama için .NET bileşenleri ve olaylarını içerir.
