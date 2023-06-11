@@ -67,5 +67,36 @@ Kodun çalışma mantığı şu şekildedir:
 Eğer "aracAdi" değişkeni "Kağıt" ile eşleşiyorsa, "pBox" nesnesinin Image özelliği "kagit" adlı kaynak dosya ile değiştirilir.
 Eğer yukarıdaki iki durum sağlanmıyorsa, "pBox" nesnesinin Image özelliği "makas" adlı kaynak dosya ile değiştirilir.
 Son olarak, "aracAdi" değişkeni geri döndürülür.
-Bu kod parçası, "aracAdi" değişkeninin değerine göre ilgili aracın görüntüsünü yükler ve "aracAdi" değerini geri döndürür. Bu kod parçasının tam olarak nasıl çalıştığını görmek için, "tas", "kagit" ve "makas" adlı kaynak dosyaların mevcut olması gerektiğini unutmayın.
+Bu kod parçası, "aracAdi" değişkeninin değerine göre ilgili aracın görüntüsünü yükler ve "aracAdi" değerini geri döndürür. Bu kod parçasının tam olarak nasıl çalıştığını görmek için, "tas", "kagit" ve "makas" adlı kaynak dosyaların mevcut olması gerektiğini unutmayın 
+Verilen kod, C# dilinde bir taş-kağıt-makas oyununun kısmi bir uygulamasını içeriyor. Kod, iki oyuncunun yaptığı seçimlere dayanarak oyunun sonucunu belirleyen "KazanmaDurumu" adında bir yöntem ve birkaç düğme için olay işleyicilerini tanımlar.
+
+İşte kodun ayrıntıları:
+
+"KazanmaDurumu" yöntemi:
+
+Bu yöntem, iki oyuncunun (Oyuncu1 ve Oyuncu2) yaptığı seçimleri kontrol eder ve sonucu belirler.
+Seçimleri karşılaştırmak ve sonucu "Durum" değişkenine atamak için if-else ifadeleri kullanılır.
+Belirlenen sonuç, "lblDurum" adındaki bir etiket kontrolüne atanır.
+Düğme olay işleyicileri:
+
+"btnOy1_Click" olay işleyici, birinci oyuncunun seçim yapmak için bir düğmeye (btnOy1) tıkladığında tetiklenir.
+
+"RasgeleArac" yöntemi, bir PictureBox kontrolü (pbOy1) argüman olarak kullanılarak çağrılır ve sonuç Oyuncu1'e atanır.
+
+İlk oyuncunun tıklamalarını önlemek için "btnOy1" düğmesi devre dışı bırakılır.
+
+"btnOy2_Click" olay işleyici, ikinci oyuncunun seçim yapmak için bir düğmeye (btnOy2) tıkladığında tetiklenir.
+
+İlk oyuncunun düğmesinin (btnOy1) devre dışı olup olmadığı kontrol edilir, bu da birinci oyuncunun seçim yaptığını gösterir.
+
+Eğer öyleyse, ikinci oyuncunun seçimini belirlemek için pbOy2 argümanıyla "RasgeleArac" yöntemi çağrılır.
+
+Ardından, her iki oyuncunun seçimine göre oyunun sonucunu belirlemek için "KazanmaDurumu" yöntemi çağrılır.
+
+İkinci oyuncunun tıklamalarını önlemek için "btnOy2" düğmesi devre dışı bırakılır.
+
+"btnYeniOyun_Click" olay işleyici, yeni bir oyun başlatmak için bir düğmeye (btnYeniOyun) tıklandığında tetiklenir.
+
+İki oyuncu düğmesini (btnOy1 ve btnOy2) yeniden etkinleştirir, oyuncuların seçimlerini (Oyuncu1 ve Oyuncu2) sıfırlar, sonuç etiketini (lblDurum) temizler ve PictureBox kontrollerindeki görüntüleri (pbOy1 ve pbOy2) sıf
+
 
