@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 using System.ComponentModel;
 
-using System.Data;//www.gorselprogramlama.com
+using System.Data;
 
 using System.Drawing;
 
@@ -42,7 +42,7 @@ namespace Tas___Kagit___Makas
 
             string aracAdi = "-";
 
-            switch (rasgeleArac)//www.gorselprogramlama.com
+            switch (rasgeleArac)
 
             {
 
@@ -62,7 +62,7 @@ namespace Tas___Kagit___Makas
 
             }
 
-            else if (aracAdi.Equals("Kağıt"))//www.gorselprogramlama.com
+            else if (aracAdi.Equals("Kağıt"))
 
             {
 
@@ -104,7 +104,7 @@ namespace Tas___Kagit___Makas
 
             }
 
-            else if (Oyuncu1 == "Kağıt" && Oyuncu2 == "Taş")//www.gorselprogramlama.com
+            else if (Oyuncu1 == "Kağıt" && Oyuncu2 == "Taş")
 
             {
 
@@ -146,7 +146,7 @@ namespace Tas___Kagit___Makas
 
             lblDurum.Text = Durum;
 
-        }//www.gorselprogramlama.com
+        }
 
         private void btnOy1_Click(object sender, EventArgs e)
 
@@ -170,7 +170,7 @@ namespace Tas___Kagit___Makas
 
                 KazanmaDurumu();
 
-                btnOy2.Enabled = false;//www.gorselprogramlama.com
+                btnOy2.Enabled = false;
 
             }
 
@@ -196,7 +196,7 @@ namespace Tas___Kagit___Makas
 
             lblDurum.Text = "";
 
-            pbOy1.Image = null; pbOy2.Image = null;//www.gorselprogramlama.com
+            pbOy1.Image = null; pbOy2.Image = null;
 
         }
 
