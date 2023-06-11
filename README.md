@@ -51,5 +51,12 @@ switch (rasgeleArac): switch ifadesi, rasgeleArac değerini değerlendirir ve de
 
 Verdiğiniz kod parçası, switch ifadesindeki case'ler ve bunlara bağlı eylemler içermediği için her case'in özel işlevini veya amacını belirlemek mümkün değildir. Daha fazla bilgi olmadan her bir case'in işlevi hakkında daha ayrıntılı bir açıklama yapmak zordur.
 
-Gönderdiğiniz kod parçasının daha büyük bir programa ait olduğu ve oyuncular için rastgele araç isimleri oluşturma işlevini yerine getirdiği görülüyor, ancak eksik kod veya ek bilgi olmadan daha ayrıntılı bir açıklama yapmak zor.
+Gönderdiğiniz kod parçasının daha büyük bir programa ait olduğu ve oyuncular için rastgele araç isimleri oluşturma işlevini yerine getirdiği görülüyor, ancak eksik kod veya ek bilgi olmadan daha ayrıntılı bir açıklama yapmak zor. 
+Bu kod parçası, bir oyunda "Taş, Kağıt, Makas" olarak bilinen bir oyunun araçlarını temsil etmektedir. Kod, bir durum (case) değişkeninin değerine göre "aracAdi" değişkenine bir değer atar.
+
+Eğer durum değişkeni 0 ise, "aracAdi" değişkenine "Taş" değeri atanır.
+Eğer durum değişkeni 1 ise, "aracAdi" değişkenine "Kağıt" değeri atanır.
+Eğer durum değişkeni 2 ise, "aracAdi" değişkenine "Makas" değeri atanır.
+
+Bu kod parçası, bir "Taş, Kağıt, Makas" oyununda kullanılabilecek olan araç adlarını belirlemek için kullanılabilir.
 
