@@ -6,7 +6,7 @@ using System.Collections.Generic;
  
 using System.ComponentModel;
  
-using System.Data;//www.gorselprogramlama.com
+using System.Data;
  
 using System.Drawing;
  
@@ -85,7 +85,7 @@ int rasgeleArac = r.Next(0, 3);
  
 string aracAdi = "-";
  
-switch (rasgeleArac)//www.gorselprogramlm.com
+switch (rasgeleArac)
 
 ---
 
@@ -131,7 +131,7 @@ pBox.Image = Properties.Resources.tas;
  
 }
  
-else if (aracAdi.Equals("Kağıt"))//www.gorselprogramlama.com
+else if (aracAdi.Equals("Kağıt"))
  
 {
  
@@ -186,6 +186,233 @@ pBox.Image özelliği Properties.Resources.makas kaynağına atanır. Bu, "makas
 - Son olarak, aracAdi değeri geri döndürülür.
 
 ---
+
+private void KazanmaDurumu()
+ 
+{
+ 
+string Durum = "";
+ 
+if (Oyuncu1 == "Taş" && Oyuncu2 == "Makas")
+ 
+{
+ 
+Durum = "Taş, Makas'ı kırar. Oyuncu 1 kazandı.";
+ 
+}
+ 
+else if (Oyuncu1 == "Makas" && Oyuncu2 == "Taş")
+ 
+{
+ 
+Durum = "Taş, Makas'ı kırar. Oyuncu 2 kazandı.";
+ 
+}
+ 
+else if (Oyuncu1 == "Kağıt" && Oyuncu2 == "Taş")
+ 
+{
+ 
+Durum = "Kağıt, Taş'ı sarar. Oyuncu 1 kazandı.";
+ 
+}
+ 
+else if (Oyuncu1 == "Taş" && Oyuncu2 == "Kağıt")
+ 
+{
+ 
+Durum = "Kağıt, Taş'ı sarar. Oyuncu 2 kazandı.";
+ 
+}
+ 
+else if (Oyuncu1 == "Makas" && Oyuncu2 == "Kağıt")
+ 
+{
+ 
+Durum = "Makas, Kağıdı keser. Oyuncu 1 kazandı.";
+ 
+}
+ 
+else if (Oyuncu1 == "Kağıt" && Oyuncu2 == "Makas")
+ 
+{
+ 
+Durum = "Makas, Kağıdı keser. Oyuncu 2 kazandı.";
+ 
+}
+ 
+else if (Oyuncu1 == Oyuncu2)
+ 
+{
+ 
+Durum = "Berabere";
+ 
+}
+ 
+lblDurum.Text = Durum;
+ 
+}
+
+- Bu kod satırında , Oyuncu1 ve Oyuncu2 değişkenlerindeki taş, kağıt veya makas seçimlerine göre kazananı belirlemek için kullanılır. Kazanan durumu Durum değişkenine atar ve lblDurum isimli bir etikete metin olarak görüntüler.
+
+**string Durum = "";**
+
+- Boş bir Durum metin değişkeni oluşturulur.
+
+**if (Oyuncu1 == "Taş" && Oyuncu2 == "Makas"):**
+
+- Eğer Oyuncu1 "Taş" seçtiyse ve Oyuncu2 "Makas" seçtiyse:Durum değişkenine "Taş, Makas'ı kırar. Oyuncu 1 kazandı." metni atanır.
+
+**else if (Oyuncu1 == "Makas" && Oyuncu2 == "Taş")**
+
+- Eğer Oyuncu1 "Makas" seçtiyse ve Oyuncu2 "Taş" seçtiyse:Durum değişkenine "Taş, Makas'ı kırar. Oyuncu 2 kazandı." metni atanır.
+
+- Diğer durumlar için benzer şekilde else if ifadeleri kullanılır
+
+**else if (Oyuncu1 == "Kağıt" && Oyuncu2 == "Taş")**
+
+- Oyuncu1 "Kağıt" seçtiyse ve Oyuncu2 "Taş" seçtiyse:
+Durum değişkenine "Kağıt, Taş'ı sarar. Oyuncu 1 kazandı." metni atanır.
+
+**else if (Oyuncu1 == "Taş" && Oyuncu2 == "Kağıt")**
+
+- Oyuncu1 "Taş" seçtiyse ve Oyuncu2 "Kağıt" seçtiyse:
+Durum değişkenine "Kağıt, Taş'ı sarar. Oyuncu 2 kazandı." metni atanır.
+
+**else if (Oyuncu1 == "Makas" && Oyuncu2 == "Kağıt")**
+
+- Oyuncu1 "Makas" seçtiyse ve Oyuncu2 "Kağıt" seçtiyse:
+Durum değişkenine "Makas, Kağıdı keser. Oyuncu 1 kazandı." metni atanır.
+
+**else if (Oyuncu1 == "Kağıt" && Oyuncu2 == "Makas")**
+
+- Oyuncu1 "Kağıt" seçtiyse ve Oyuncu2 "Makas" seçtiyse:
+Durum değişkenine "Makas, Kağıdı keser. Oyuncu 2 kazandı." metni atanır.
+
+**else if (Oyuncu1 == Oyuncu2)**
+
+- Eğer Oyuncu1 ve Oyuncu2 aynı seçimi yaparsa:
+Durum değişkenine "Berabere" metni atanır.
+
+**lblDurum.Text = Durum;**
+
+-  Durum metni lblDurum etiketinin metin özelliğine atanır ve kullanıcıya gösterilir.
+
+---
+
+private void btnOy1_Click(object sender, EventArgs e)
+ 
+{
+ 
+Oyuncu1 = RasgeleArac(pbOy1);
+ 
+btnOy1.Enabled = false;
+ 
+}
+ 
+private void btnOy2_Click(object sender, EventArgs e)
+ 
+{
+ 
+if (!btnOy1.Enabled)
+ 
+{
+ 
+Oyuncu2 = RasgeleArac(pbOy2);
+ 
+KazanmaDurumu();
+ 
+btnOy2.Enabled = false;
+ 
+}
+ 
+else
+ 
+{
+ 
+MessageBox.Show("Önce birinci oyuncu oynamalıdır.","Dikkat");
+ 
+}
+ 
+}
+ 
+private void btnYeniOyun_Click(object sender, EventArgs e)
+ 
+{
+ 
+btnOy1.Enabled = true;
+ 
+btnOy2.Enabled = true;
+ 
+Oyuncu1 = ""; Oyuncu2 = "";
+ 
+lblDurum.Text = "";
+ 
+pbOy1.Image = null; pbOy2.Image = null;
+
+---
+
+- Burada bir oyuncu seçeneği seçtiğinde ve diğer oyuncu da seçeneğini seçtiğinde gerçekleşecek olayları belirtir. Ayrıca, yeni bir oyun başlatıldığında da yapılması gerekenleri tanımlar
+
+**private void btnOy1_Click(object sender, EventArgs e)**
+
+- Oyuncu 1'in butonuna tıklandığında gerçekleşecek olay:
+
+**Oyuncu1 = RasgeleArac(pbOy1);**
+
+- RasgeleArac fonksiyonunu kullanarak Oyuncu 1'in araç seçimini belirler ve Oyuncu1 değişkenine atar.
+
+**btnOy1.Enabled = false;**
+
+- Oyuncu 1'in butonunu devre dışı bırakır.
+
+**private void btnOy2_Click(object sender, EventArgs e)**
+
+- Oyuncu 2'nin butonuna tıklandığında gerçekleşecek olay:
+
+**if (!btnOy1.Enabled)**
+
+- Eğer Oyuncu 1'in butonu etkin değilse:
+
+**Oyuncu2 = RasgeleArac(pbOy2);**
+
+- RasgeleArac fonksiyonunu kullanarak Oyuncu 2'nin araç seçimini belirler ve Oyuncu2 değişkenine atar.
+
+**KazanmaDurumu();**
+
+- Kazanan durumunu kontrol etmek için KazanmaDurumu fonksiyonunu çağırır.
+
+**btnOy2.Enabled = false;**
+
+- Oyuncu 2'nin butonunu devre dışı bırakır.
+else: Aksi takdirde:
+"Önce birinci oyuncu oynamalıdır." mesajını içeren bir ileti kutusu görüntüler.
+
+**private void btnYeniOyun_Click(object sender, EventArgs e)**
+
+- "Yeni Oyun" butonuna tıklandığında gerçekleşecek olay:
+
+**btnOy1.Enabled = true;**
+
+- Oyuncu 1'in butonunu etkinleştirir.
+
+**btnOy2.Enabled = true;** 
+
+- Oyuncu 2'nin butonunu etkinleştirir.
+
+**Oyuncu1 = ""; Oyuncu2 = "";**
+
+- Oyuncu 1 ve Oyuncu 2'nin seçimlerini sıfırlar.
+
+**lblDurum.Text = ""; **
+
+- Kazanan durumu görüntüleyen etiketin metnini temizler.
+
+**pbOy1.Image = null; pbOy2.Image = null;**
+
+- Oyuncu 1 ve Oyuncu 2'nin araç görüntülerini temizler.
+
+
 
 
 
