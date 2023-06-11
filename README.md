@@ -1,5 +1,13 @@
 #using System;:
-Bu satır, System adlı bir namespace'i kullanacağımızı belirtir. System, genel .NET sınıflarını içeren bir isim alanıdır.
+###﻿using System;
+
+using System.Collections.Generic;
+
+using System.ComponentModel;
+
+using System.Data;//www.gorselprogramlama.com
+
+using System.Drawing;
 
 using System.Collections.Generic;:
 Bu satır, System.Collections.Generic adlı bir namespace'i kullanacağımızı belirtir. Bu isim alanı, .NET koleksiyon sınıflarını içerir.
