@@ -2,6 +2,8 @@
 
 #### Önemli bir not: Anlatacağım Taş Kağıt Makas oyununa ait C# kodlarını daha etkin bir biçimde sunabilmek için bölüm bölüm alarak kodları sizlerle paylaştım ve ardından sırasıyla işlevleri hakkında bilgi vermek istedim. 
 
+## 1.Kod bloğumuz:
+
 using System;
  
 using System.Collections.Generic;
@@ -35,7 +37,7 @@ InitializeComponent();
 }
 
 ---
-
+## 1.Kod bloğunun açıklanma alanı:
 **using System,**
 - System, genel .NET sınıflarını içeren bir isim alanıdır. 
 
@@ -75,6 +77,8 @@ InitializeComponent();
 
 ---
 
+## 2.Kod bloğumuz:
+
 Random r = new Random();
  
 string Oyuncu1 = "", Oyuncu2 = "";
@@ -90,6 +94,8 @@ string aracAdi = "-";
 switch (rasgeleArac)
 
 ---
+
+## 2.Kod bloğunun açıklanma alanı:
 
 **Random r = new Random();** 
 
@@ -116,6 +122,8 @@ switch (rasgeleArac)
 - switch ifadesi, rasgeleArac değerini değerlendirir ve değerine bağlı olarak hangi case'in çalıştırılacağını belirler.
 
 ---
+
+## 3.Kod bloğu:
 
 case 0: aracAdi = "Taş"; break;
  
@@ -153,6 +161,8 @@ return aracAdi;
 
 ---
 
+## 3.Kod bloğu açıklanma alanı:
+
 - Bu kod satırında, aracAdi değişkenine atanmış olan taş, kağıt veya makas değerine göre bir görüntüyü pBox  PictureBox'a atamak için kullanılıyor. Ayrıca, aracAdi değerini geri döndürüyor.
 
 **case 0: aracAdi = "Taş"; break;**
@@ -188,6 +198,8 @@ pBox.Image özelliği Properties.Resources.makas kaynağına atanır. Bu, "makas
 - Son olarak, aracAdi değeri geri döndürülür.
 
 ---
+
+## 4.Kod bloğumuz:
 
 private void KazanmaDurumu()
  
