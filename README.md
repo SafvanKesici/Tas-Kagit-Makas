@@ -37,7 +37,8 @@ InitializeComponent();
 }
 
 ---
-## 1.Bölüm açıklanma alanı:
+
+## 1.Bölüm Açıklanma Alanı:
 
 **using System,**
 - System, genel .NET sınıflarını içeren bir isim alanıdır. 
@@ -96,7 +97,7 @@ switch (rasgeleArac)
 
 ---
 
-## 2.Bölüm açıklanma alanı:
+## 2.Bölüm Açıklanma Alanı:
 
 **Random r = new Random();** 
 
