@@ -1,7 +1,5 @@
 **Taş Kağıt Makas Oyunu**
 
-C# Örneği:
-
 using System;
  
 using System.Collections.Generic;
